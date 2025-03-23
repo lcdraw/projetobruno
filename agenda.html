@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda de Aulas - Elite Artes Marciais</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Elite</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="cadastro.html">Cadastro</a></li>
+                <li><a href="agenda.html">Agenda</a></li>
+                <li><a href="comunidade.html">Comunidade</a></li>
+                <li><a href="area-do-aluno.html">Área do Aluno</a></li>
+                <li><a href="trofeu.html">Troféus</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="novidades.html">Novidades</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="agenda">
+        <h1>Agenda de Aulas</h1>
+        <p>Escolha a aula e agende sua participação.</p>
+
+        <div class="calendar">
+            <h2>Calendário de Aulas</h2>
+            <div id="calendar-container">
+                <!-- O calendário será gerado aqui via JavaScript -->
+            </div>
+        </div>
+
+        <div class="booking-form">
+            <h2>Agendar Aula</h2>
+            <form id="formAgendamento" action="#" method="POST">
+                <div class="input-group">
+                    <label for="aula">Selecione a Aula</label>
+                    <select id="aula" name="aula">
+                        <option value="karate">Karate</option>
+                        <option value="jiu-jitsu">Jiu-Jitsu</option>
+                        <option value="muay-thai">Muay Thai</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="data-agendamento">Data e Hora</label>
+                    <input type="datetime-local" id="data-agendamento" name="data-agendamento" required>
+                </div>
+                <div class="input-group">
+                    <button type="submit" class="btn">Agendar</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Elite Artes Marciais. Todos os direitos reservados.</p>
+    </footer>
+    <script src="assets/js/menu.js"></script> <!-- Se necessário -->
+<script src="assets/js/form-contato.js"></script>
+<script src="assets/js/animations.js"></script>
+<script src="assets/js/app.js"></script>
+  
+</body>
+</html>
